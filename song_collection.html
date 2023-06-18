@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs Collection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="logo">
+      <img src="Images/Logo.jpeg" alt="Logo">
+    </div>
+    <ul class="nav_ul">
+      <li class="nav_li"><a href="index.html">Home</a></li>
+      <li class="nav_li"><a href="song_collection.html">Songs Collection</a></li>
+      <li class="nav_li"><a href="about.html">About</a></li>
+      <li class="nav_li"><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <!-- Add a menu icon for mobile view -->
+    <div class="menu-icon">
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+      <div class="menu-icon-bar"></div>
+    </div>
+  </nav>
+
+  <div id="music-player">
+    <audio id="audio-player"></audio>
+    <div id="playlist"></div>
+    <div id="controls">
+      <button id="repeat-btn" class="control-btn">
+        <img src="Images/icons8-repeat-100.png" alt="Repeat">
+      </button>
+      <button id="prev-btn" class="control-btn">
+        <img src="Images/icons8-previous-100.png" alt="Prev">
+      </button>
+      <button id="play-btn" class="control-btn">
+        <img src="Images/icons8-play-100.png" alt="Play" id="play-pause-img">
+      </button>
+      <button id="next-btn" class="control-btn">
+        <img src="Images/icons8-previous-100.png" alt="Next" style="rotate: 180deg;">
+      </button>
+      <button id="shuffle-btn" class="control-btn">
+        <img src="Images/icons8-shuffle-58.png" alt="Shuffle">
+      </button>
+      <input type="range" id="seek-bar" class="control-btn" min="0" step="0.01" value="0">
+    </div>
+  </div>
+
+  <footer>
+    <p>Copyright &copy; 2023 My Music Player Website</p>
+  </footer>
+  <script src="navbarToggle.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body style="background-image: none;">
+    <nav id="navbar">
+        <div class="logo">
+            <img src="Images/Logo.jpeg" alt="Logo">
+        </div>
+        <ul class="nav_ul">
+            <li class="nav_li"><a href="index.html">Home</a></li>
+            <li class="nav_li"><a href="song_collection.html">Songs Collection</a></li>
+            <li class="nav_li"><a href="about.html">About</a></li>
+            <li class="nav_li"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- Add a menu icon for mobile view -->
+        <div class="menu-icon">
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+            <div class="menu-icon-bar"></div>
+        </div>
+    </nav>
+    <section class="contact_section">
+        <form action="/submit-contact-form" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter Your Subject" required>
+
+            <label for="query">Query:</label>
+            <textarea id="query" name="query" rows="5" placeholder="Enter Your Query" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2023 My Music Player Website</p>
+    </footer>
+    <script src="navbarToggle.js"></script>
+</body>
+
+</html>
